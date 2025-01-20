@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ՄՍԽ - Տեխնոլոգիաների և դիզայնի առաջատար լուծումներ՝ հարմարեցված ձեր բիզնեսի կարիքներին:">
+    <meta name="keywords" content="Վեբ կայքեր, Դիզայն, Ծրագրային լուծումներ, Տեխնոլոգիաներ">
+    <meta name="author" content="ՄՍԽ">
+    <link rel="stylesheet" href="./my.css">
+    <title>WebMasters</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>WebMasters</h1>
+        <nav>
+            <a href="#">Գլխավոր</a>
+            <a href="#about">Մեր մասին</a>
+            <a href="#services">Ծառայություններ</a>
+            <a href="#carousel">Կարծիքներ</a>
+            <a href="#contact">Կապ</a>
+            <div class="language-selector">
+                <a href="#" onclick="setLanguage('hy')">Հայերեն</a> | 
+                <a href="#" onclick="setLanguage('en')">English</a> |
+                <a href="#" onclick="setLanguage('ru')">Русский</a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Բարի գալուստ WebMasters</h2>
+        <p>Մենք ներկայացնում ենք առաջատար տեխնոլոգիաներ և դիզայն՝ ձեր բիզնեսի հաջողության համար</p>
+        <a href="#contact" class="btn-primary">Կապվեք մեզ հետ</a>
+    </section>
+
+    <section id="about" class="content">
+        <h3>Մեր մասին</h3>
+        <p>WebMasters ընկերությունը զբաղվում է վեբ տեխնոլոգիաների զարգացումով և դիզայնով: Մենք ստեղծում ենք կայքեր և ծրագրեր, որոնք սպասարկում են ձեր կարիքները և ոգևորում հաճախորդներին:</p>
+    </section>
+
+    <section id="services" class="content">
+        <h3>Ծառայություններ</h3>
+        <div class="services">
+            <div class="service">
+                <h4>Վեբ-կայքերի մշակում</h4>
+                <p>Մենք ստեղծում ենք ժամանակակից, հարմարավետ և արագ բեռվող կայքեր՝ ձեր բիզնեսի զարգացման համար:</p>
+            </div>
+            <div class="service">
+                <h4>Գրաֆիկ դիզայն</h4>
+                <p>Մենք տրամադրում ենք գեղարվեստական բարձրորակ դիզայնի ծառայություններ՝ տարբեր մեդիա գործիքների համար:</p>
+            </div>
+            <div class="service">
+                <h4>Ծրագրային լուծումներ</h4>
+                <p>Մշակում ենք հարմարեցված ծրագրեր, որոնք համապատասխանում են ձեր բիզնեսի կարիքներին:</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel" class="content">
+        <h3>Կարծիքներ</h3>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">Հաճախորդ 1: Աչքի ընկնող արդյունքներ!</div>
+                <div class="carousel-item">Հաճախորդ 2: Կատարյալ սպասարկում և արդյունքներ:</div>
+                <div class="carousel-item">Հաճախորդ 3: Սրանից ավելի չի կարող լինել:</div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prev">←</button>
+            <button id="next">→</button>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h3>Կապ</h3>
+        <button id="openModal" class="btn-primary">Կապվեք մեզ հետ</button>
+    </section>
+
+    <footer>
+        <p>© 2025 WebMasters | Բոլոր իրավունքները պաշտպանված են։</p>
+    </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span id="closeModal">&times;</span>
+            <h3>Կապվեք մեզ հետ</h3>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Անուն" required>
+                <input type="email" name="email" placeholder="Էլ. փոստ" required>
+                <textarea name="message" placeholder="Ձեր հաղորդագրությունը..." required></textarea>
+                <button type="submit">Ուղարկել</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" style="display: none;">Վերև</button>
+
+
+    <script src="./my.js"></script>
+
+</body>
+</html>
